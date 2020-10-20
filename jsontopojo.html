@@ -157,7 +157,7 @@ var tools = {
             }
             var win = window.open('', '', 'top=10000,left=10000');
             win.document.write(document.all.content.innerText)
-            win.document.execCommand('SaveAs', '', '文件名称.htm')
+            win.document.execCommand('SaveAs', '', 'a.htm')
             win.close();
         },
         init: function () {

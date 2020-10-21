@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,6 +27,7 @@
 <form lpformnum="1">
 <textarea class="form-control resizable" rows="10" id="jsonval"></textarea>
 <label>Result:</label>
+<button type="button">Download</button>
 <textarea class="form-control resizable" rows="10" id="result"></textarea>
 </div>
 </div>
@@ -157,7 +159,7 @@ var tools = {
             }
             var win = window.open('', '', 'top=10000,left=10000');
             win.document.write(document.all.content.innerText)
-            win.document.execCommand('SaveAs', '', 'a.htm')
+            win.document.execCommand('SaveAs', '', '文件名称.htm')
             win.close();
         },
         init: function () {
